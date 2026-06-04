@@ -3,16 +3,19 @@
 The privacy policy page for the **SkoreKing** app (a score counter for the *Skull King* card game),
 hosted on GitHub Pages.
 
-🔗 **Live URL (once Pages is enabled):** https://brozzor.github.io/skoreking-policy/
+🔗 **Live URLs (once Pages is enabled):**
+- Privacy Policy — https://brozzor.github.io/skoreking-policy/
+- Support — https://brozzor.github.io/skoreking-policy/support.html
 
 ## Files
 
-| File          | Purpose                                              |
-| ------------- | ---------------------------------------------------- |
-| `index.html`  | The privacy policy page (self-contained HTML + CSS). |
-| `icon.png`    | App icon, used as the page logo + Apple touch icon.  |
-| `favicon.png` | Browser tab favicon.                                 |
-| `.nojekyll`   | Tells GitHub Pages to serve files as-is (no Jekyll). |
+| File           | Purpose                                              |
+| -------------- | ---------------------------------------------------- |
+| `index.html`   | The privacy policy page (self-contained HTML + CSS). |
+| `support.html` | The support / help page (self-contained HTML + CSS). |
+| `icon.png`     | App icon, used as the page logo + Apple touch icon.  |
+| `favicon.png`  | Browser tab favicon.                                 |
+| `.nojekyll`    | Tells GitHub Pages to serve files as-is (no Jekyll). |
 
 ## ⚠️ Before publishing
 
@@ -37,7 +40,9 @@ Open `index.html` and replace the placeholder contact email **`your-email@exampl
 3. Wait ~1 minute. Your policy is live at:
    **https://brozzor.github.io/skoreking-policy/**
 
-## Use the URL in the stores
+## Use the URLs in the stores
 
-Paste that URL into the **Privacy Policy URL** field of your App Store Connect and
-Google Play Console listings.
+- Paste **https://brozzor.github.io/skoreking-policy/** into the **Privacy Policy URL**
+  field of your App Store Connect and Google Play Console listings.
+- Paste **https://brozzor.github.io/skoreking-policy/support.html** into the
+  **Support URL** field (App Store Connect) / **Support / Website** field (Google Play Console).
