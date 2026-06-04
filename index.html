@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--
+  ⚠️  BEFORE PUBLISHING: replace "romain@buisson.us" (search the file, it appears twice)
+      with your real contact address. The App Store / Play Store require a working contact.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkoreKing — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for SkoreKing, the score counter for the Skull King card game. SkoreKing collects no personal data — everything stays on your device." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0A0E1A" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SkoreKing — Privacy Policy" />
+  <meta property="og:description" content="SkoreKing collects no personal data. Everything stays on your device." />
+  <meta property="og:image" content="icon.png" />
+
+  <!-- Fonts: Fraunces (display) + Inter (body) — same as the app -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      /* Midnight Treasure palette (from the app theme) */
+      --bg: #0A0E1A;
+      --bg-to: #0D1424;
+      --surface: #141D33;
+      --surface-elevated: #18233D;
+      --primary: #E8B23A;      /* gold */
+      --primary-dim: #A6802A;
+      --accent: #27C7C2;       /* teal */
+      --accent-dim: #1C7C79;
+      --text: #F4EFE3;         /* ivory */
+      --text-muted: #8C99B4;
+      --text-faint: #828FB0;
+      --danger: #FF6B5E;       /* coral */
+      --success: #3FD68A;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+      --glow: rgba(232, 178, 58, 0.45);
+
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+      --radius-sm: 12px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --maxw: 720px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background:
+        radial-gradient(1100px 600px at 50% -10%, rgba(232, 178, 58, 0.10), transparent 60%),
+        radial-gradient(900px 500px at 100% 0%, rgba(39, 199, 194, 0.08), transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-to) 100%);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 56px 22px 80px;
+    }
+
+    /* ---------- Header ---------- */
+    header { text-align: center; margin-bottom: 40px; }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      display: block;
+      margin: 0 auto 22px;
+      box-shadow:
+        0 0 0 1px var(--border-strong),
+        0 18px 40px -12px rgba(0, 0, 0, 0.7),
+        0 0 36px -4px var(--glow);
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(34px, 8vw, 48px);
+      line-height: 1.05;
+      margin: 0;
+      letter-spacing: -0.5px;
+      background: linear-gradient(180deg, #FBE6A8 0%, var(--primary) 55%, var(--primary-dim) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(18px, 4.5vw, 22px);
+      color: var(--text);
+      margin: 6px 0 14px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-faint);
+      letter-spacing: 0.2px;
+    }
+    .meta span { color: var(--text-muted); }
+
+    /* ---------- TL;DR highlight ---------- */
+    .tldr {
+      background: linear-gradient(135deg, rgba(39, 199, 194, 0.10), rgba(232, 178, 58, 0.08));
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      margin: 0 0 38px;
+      position: relative;
+      overflow: hidden;
+    }
+    .tldr::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--primary), var(--accent));
+    }
+    .tldr h2 {
+      margin: 0 0 6px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--primary);
+      border: 0;
+      padding: 0;
+    }
+    .tldr p { margin: 0; color: var(--text); }
+    .tldr strong { color: var(--text); }
+
+    /* ---------- Chips ---------- */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 44px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 15px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .chip .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 8px var(--success);
+    }
+
+    /* ---------- Sections ---------- */
+    section { margin-bottom: 34px; }
+
+    h2 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(21px, 5vw, 26px);
+      color: var(--text);
+      margin: 0 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: -0.2px;
+    }
+    h2 .num {
+      color: var(--primary);
+      font-size: 0.7em;
+      vertical-align: middle;
+      margin-right: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    p { margin: 0 0 14px; color: var(--text); }
+    p.muted { color: var(--text-muted); }
+
+    ul { margin: 0 0 14px; padding-left: 0; list-style: none; }
+    li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 6px; top: 11px;
+      width: 7px; height: 7px;
+      border-radius: 2px;
+      background: var(--primary);
+      transform: rotate(45deg);
+    }
+    li strong { color: var(--text); font-weight: 600; }
+
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); transition: color .15s, border-color .15s; }
+    a:hover { color: var(--primary); border-color: var(--primary); }
+
+    .pill-no {
+      display: inline-block;
+      background: rgba(63, 214, 138, 0.12);
+      color: var(--success);
+      border: 1px solid rgba(63, 214, 138, 0.3);
+      border-radius: 999px;
+      padding: 1px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 56px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .disclaimer {
+      font-size: 13px;
+      color: var(--text-faint);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .copyright { font-size: 13px; color: var(--text-muted); }
+    .copyright .heart { color: var(--danger); }
+
+    ::selection { background: rgba(232, 178, 58, 0.3); color: #fff; }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 40px 18px 64px; }
+      .logo { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <img class="logo" src="icon.png" alt="SkoreKing app icon" width="96" height="96" />
+      <h1>SkoreKing</h1>
+      <div class="subtitle">Privacy Policy</div>
+      <div class="meta">Last updated <span>June 4, 2026</span> · App version <span>1.0.0</span></div>
+    </header>
+
+    <div class="tldr">
+      <h2>In short</h2>
+      <p><strong>SkoreKing collects nothing.</strong> The app has no accounts, no servers, and no analytics. Everything you enter — player names, scores, and game history — is stored only on your own device.</p>
+    </div>
+
+    <div class="chips">
+      <span class="chip"><span class="dot"></span>No account required</span>
+      <span class="chip"><span class="dot"></span>Works fully offline</span>
+      <span class="chip"><span class="dot"></span>No analytics or tracking</span>
+      <span class="chip"><span class="dot"></span>No ads</span>
+      <span class="chip"><span class="dot"></span>Data stays on your device</span>
+    </div>
+
+    <section>
+      <h2><span class="num">1</span>Who we are</h2>
+      <p>SkoreKing (“the app”, “we”) is a free score counter for the <em>Skull King</em> card game. This Privacy Policy explains how the app handles information when you use it. By using SkoreKing, you agree to this policy.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span>Information we collect</h2>
+      <p>None. <span class="pill-no">No personal data</span> SkoreKing does not collect, transmit, or sell any personal information. We do not ask for your name, email, phone number, or location, and the app does not contain any advertising or tracking technology.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span>Data stored on your device</h2>
+      <p>To do its job, the app saves the following <strong>locally on your device only</strong>, using your device's standard app storage:</p>
+      <ul>
+        <li><strong>Game data</strong> — the player names you type, bids, scores, bonuses, and the history of completed games.</li>
+        <li><strong>Statistics</strong> — per-player totals computed from your saved game history.</li>
+        <li><strong>Settings</strong> — your preferences such as theme, haptics, default rules, and language.</li>
+      </ul>
+      <p>This data never leaves your device. It is not uploaded to us or to anyone else, because the app has no server to send it to.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span>How to delete your data</h2>
+      <p>You are always in full control of your data:</p>
+      <ul>
+        <li>Use the in-app <strong>“Clear history”</strong> option in Settings to remove saved games and statistics.</li>
+        <li>Delete individual past games from the History screen.</li>
+        <li>Uninstalling the app permanently removes all of its locally stored data from your device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span>No third parties</h2>
+      <p>SkoreKing does not integrate any third-party analytics, advertising, crash-reporting, or social SDKs. No data is shared with third parties, because no data is collected in the first place.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span>Permissions</h2>
+      <p>The app uses <strong>haptic feedback</strong> (vibration) to make interactions feel responsive. It does <span class="pill-no">No camera</span> <span class="pill-no">No location</span> <span class="pill-no">No contacts</span> require access to your camera, microphone, location, contacts, photos, or any other sensitive device feature.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span>Children's privacy</h2>
+      <p>SkoreKing is suitable for all ages and does not knowingly collect any information from anyone, including children. As the app stores no personal data and connects to no servers, there is nothing collected from children or any other user.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span>Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be posted on this page with a new “Last updated” date. Material changes will be reflected in a future app update.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">9</span>Contact</h2>
+      <p>Questions about this policy? Get in touch:</p>
+      <p><a href="mailto:romain@buisson.us">romain@buisson.us</a></p>
+    </section>
+
+    <footer>
+      <p class="disclaimer">
+        SkoreKing is an independent, unofficial score-keeping tool. It is not affiliated with,
+        endorsed by, or sponsored by the publishers of the <em>Skull King</em> card game.
+        All trademarks and game rules belong to their respective owners.
+      </p>
+      <p class="copyright">© 2026 SkoreKing · Made with <span class="heart">♥</span> for pirates</p>
+    </footer>
+
+  </div>
+</body>
+</html>
