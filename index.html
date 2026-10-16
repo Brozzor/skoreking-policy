@@ -7,8 +7,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkoreKing — Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for SkoreKing, the score counter for the Skull King card game. SkoreKing collects no personal data — everything stays on your device." />
+  <title>SkoreKing · Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for SkoreKing, the score counter for the Skull King card game. SkoreKing collects no personal data: your games stay on your device, and only anonymous usage statistics are sent." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0A0E1A" />
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -16,11 +16,11 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="SkoreKing — Privacy Policy" />
+  <meta property="og:title" content="SkoreKing · Privacy Policy" />
   <meta property="og:description" content="SkoreKing collects no personal data. Everything stays on your device." />
   <meta property="og:image" content="icon.png" />
 
-  <!-- Fonts: Fraunces (display) + Inter (body) — same as the app -->
+  <!-- Fonts: Fraunces (display) + Inter (body), same as the app -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -265,20 +265,20 @@
       <img class="logo" src="icon.png" alt="SkoreKing app icon" width="96" height="96" />
       <h1>SkoreKing</h1>
       <div class="subtitle">Privacy Policy</div>
-      <div class="meta">Last updated <span>June 4, 2026</span> · App version <span>1.0.0</span></div>
+      <div class="meta">Last updated <span>October 17, 2026</span> · App version <span>1.0.0</span></div>
     </header>
 
     <div class="tldr">
       <h2>In short</h2>
-      <p><strong>SkoreKing collects nothing.</strong> The app has no accounts, no servers, and no analytics. Everything you enter — player names, scores, and game history — is stored only on your own device.</p>
+      <p><strong>SkoreKing collects no personal data.</strong> Everything you enter (player names, scores, game history) is stored only on your own device. To help improve the app, it sends anonymous usage statistics, such as how many games are played and how long they last. You can turn this off at any time in Settings.</p>
     </div>
 
     <div class="chips">
       <span class="chip"><span class="dot"></span>No account required</span>
       <span class="chip"><span class="dot"></span>Works fully offline</span>
-      <span class="chip"><span class="dot"></span>No analytics or tracking</span>
-      <span class="chip"><span class="dot"></span>No ads</span>
-      <span class="chip"><span class="dot"></span>Data stays on your device</span>
+      <span class="chip"><span class="dot"></span>No tracking, no ads</span>
+      <span class="chip"><span class="dot"></span>Anonymous stats, opt-out</span>
+      <span class="chip"><span class="dot"></span>Your games stay on your device</span>
     </div>
 
     <section>
@@ -288,52 +288,68 @@
 
     <section>
       <h2><span class="num">2</span>Information we collect</h2>
-      <p>None. <span class="pill-no">No personal data</span> SkoreKing does not collect, transmit, or sell any personal information. We do not ask for your name, email, phone number, or location, and the app does not contain any advertising or tracking technology.</p>
+      <p><span class="pill-no">No personal data</span> SkoreKing does not collect, transmit, or sell any personal information. We do not ask for your name, email, phone number, or location, and the app does not contain any advertising or cross-app tracking technology.</p>
+      <p>The only information that leaves your device is the anonymous usage statistics described in the next section.</p>
     </section>
 
     <section>
-      <h2><span class="num">3</span>Data stored on your device</h2>
+      <h2><span class="num">3</span>Anonymous usage statistics</h2>
+      <p>To understand how the app is used (how many games are played, how long they take, which rules are popular) and to improve it, SkoreKing sends a small amount of anonymous information to our own server:</p>
+      <ul>
+        <li><strong>A random install identifier</strong> created by the app. It is not your device's advertising ID or hardware ID, it is not linked to you, and it is replaced by a new one if you turn statistics off.</li>
+        <li><strong>Technical context</strong>: app version, platform (iOS, Android or web), operating system version, the app's language and your device's region setting.</li>
+        <li><strong>Game milestones</strong>: when the app is opened, when a game starts, when a round is validated, and when a game ends or is abandoned, with the number of players, the number of rounds, the rules chosen, the duration, and the highest and lowest final score.</li>
+      </ul>
+      <p><strong>Never sent:</strong> player names, avatars, bids, the scores of individual players, your contacts, your location, or any advertising identifier. We do not store IP addresses.</p>
+      <p>This information is used only to produce overall statistics for us. It is not sold, not shared, not used for advertising, and not combined with data from other apps or websites. It is sent over an encrypted connection (HTTPS) through Cloudflare, our network provider, and kept for at most 25 months, after which it is deleted automatically.</p>
+      <p>Statistics are sent in the background and never slow the app down. When your device is offline they wait on the device until the next connection.</p>
+      <p><strong>To turn them off</strong>, open Settings, then Data, and switch off <strong>“Anonymous usage stats”</strong>. Statistics not yet sent are deleted from your device and nothing more is sent.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span>Data stored on your device</h2>
       <p>To do its job, the app saves the following <strong>locally on your device only</strong>, using your device's standard app storage:</p>
       <ul>
-        <li><strong>Game data</strong> — the player names you type, bids, scores, bonuses, and the history of completed games.</li>
-        <li><strong>Statistics</strong> — per-player totals computed from your saved game history.</li>
-        <li><strong>Settings</strong> — your preferences such as theme, haptics, default rules, and language.</li>
+        <li><strong>Game data</strong>: the player names you type, bids, scores, bonuses, and the history of completed games.</li>
+        <li><strong>Statistics</strong>: per-player totals computed from your saved game history.</li>
+        <li><strong>Settings</strong>: your preferences such as theme, haptics, default rules, and language.</li>
       </ul>
-      <p>This data never leaves your device. It is not uploaded to us or to anyone else, because the app has no server to send it to.</p>
+      <p>This data never leaves your device. It is not uploaded to us or to anyone else.</p>
     </section>
 
     <section>
-      <h2><span class="num">4</span>How to delete your data</h2>
+      <h2><span class="num">5</span>How to delete your data</h2>
       <p>You are always in full control of your data:</p>
       <ul>
         <li>Use the in-app <strong>“Clear history”</strong> option in Settings to remove saved games and statistics.</li>
         <li>Delete individual past games from the History screen.</li>
         <li>Uninstalling the app permanently removes all of its locally stored data from your device.</li>
+        <li>Anonymous statistics already sent are deleted automatically after 25 months. Because they are not linked to you, we cannot look them up by name; if you still want yours removed, email us and we will help.</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">5</span>No third parties</h2>
-      <p>SkoreKing does not integrate any third-party analytics, advertising, crash-reporting, or social SDKs. No data is shared with third parties, because no data is collected in the first place.</p>
+      <h2><span class="num">6</span>No third parties</h2>
+      <p>SkoreKing does not integrate any third-party analytics, advertising, crash-reporting, or social SDKs. The anonymous statistics go to a server we run ourselves and are not shared with anyone.</p>
     </section>
 
     <section>
-      <h2><span class="num">6</span>Permissions</h2>
+      <h2><span class="num">7</span>Permissions</h2>
       <p>The app uses <strong>haptic feedback</strong> (vibration) to make interactions feel responsive. It does <span class="pill-no">No camera</span> <span class="pill-no">No location</span> <span class="pill-no">No contacts</span> require access to your camera, microphone, location, contacts, photos, or any other sensitive device feature.</p>
     </section>
 
     <section>
-      <h2><span class="num">7</span>Children's privacy</h2>
-      <p>SkoreKing is suitable for all ages and does not knowingly collect any information from anyone, including children. As the app stores no personal data and connects to no servers, there is nothing collected from children or any other user.</p>
+      <h2><span class="num">8</span>Children's privacy</h2>
+      <p>SkoreKing is suitable for all ages and does not collect personal information from anyone, including children. The anonymous usage statistics contain nothing that identifies a person.</p>
     </section>
 
     <section>
-      <h2><span class="num">8</span>Changes to this policy</h2>
+      <h2><span class="num">9</span>Changes to this policy</h2>
       <p>If this policy changes, the updated version will be posted on this page with a new “Last updated” date. Material changes will be reflected in a future app update.</p>
     </section>
 
     <section>
-      <h2><span class="num">9</span>Contact</h2>
+      <h2><span class="num">10</span>Contact</h2>
       <p>Questions about this policy? Get in touch:</p>
       <p><a href="mailto:romain@buisson.us">romain@buisson.us</a></p>
     </section>
