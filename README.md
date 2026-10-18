@@ -1,48 +1,22 @@
-# SkoreKing — Privacy Policy
+# SkoreKing · Privacy Policy (moved)
 
-The privacy policy page for the **SkoreKing** app (a score counter for the *Skull King* card game),
-hosted on GitHub Pages.
+The privacy policy and support pages of the **SkoreKing** app now live on the SkoreKing site, next
+to the live scoreboard, in the `skoreking-backend` repo (`src/app/(info)/`):
 
-🔗 **Live URLs (once Pages is enabled):**
-- Privacy Policy — https://brozzor.github.io/skoreking-policy/
-- Support — https://brozzor.github.io/skoreking-policy/support.html
+- Privacy Policy: https://skoreking.buisson.us/privacy
+- Support: https://skoreking.buisson.us/support
 
-## Files
+This repo stays on GitHub Pages only so the old addresses keep working: `index.html` and
+`support.html` redirect to the new pages (meta refresh, canonical link, script).
 
-| File           | Purpose                                              |
-| -------------- | ---------------------------------------------------- |
-| `index.html`   | The privacy policy page (self-contained HTML + CSS). |
-| `support.html` | The support / help page (self-contained HTML + CSS). |
-| `icon.png`     | App icon, used as the page logo + Apple touch icon.  |
-| `favicon.png`  | Browser tab favicon.                                 |
-| `.nojekyll`    | Tells GitHub Pages to serve files as-is (no Jekyll). |
+- https://brozzor.github.io/skoreking-policy/ redirects to the Privacy Policy
+- https://brozzor.github.io/skoreking-policy/support.html redirects to Support
 
-## ⚠️ Before publishing
+Edit the pages in `skoreking-backend`, not here.
 
-Open `index.html` and replace the placeholder contact email **`your-email@example.com`**
-(it appears in an HTML comment and in the Contact section) with your real address.
+## In the stores
 
-## Deploy on GitHub Pages
-
-1. Create a public repo named `skoreking-policy` on the `Brozzor` account and push these files:
-   ```bash
-   cd skoreking-policy
-   git init
-   git add .
-   git commit -m "Add SkoreKing privacy policy page"
-   git branch -M main
-   git remote add origin https://github.com/Brozzor/skoreking-policy.git
-   git push -u origin main
-   ```
-2. On GitHub: **Settings → Pages → Build and deployment**
-   - **Source:** *Deploy from a branch*
-   - **Branch:** `main` / `/ (root)` → **Save**
-3. Wait ~1 minute. Your policy is live at:
-   **https://brozzor.github.io/skoreking-policy/**
-
-## Use the URLs in the stores
-
-- Paste **https://brozzor.github.io/skoreking-policy/** into the **Privacy Policy URL**
-  field of your App Store Connect and Google Play Console listings.
-- Paste **https://brozzor.github.io/skoreking-policy/support.html** into the
-  **Support URL** field (App Store Connect) / **Support / Website** field (Google Play Console).
+- App Store Connect: **Privacy Policy URL** https://skoreking.buisson.us/privacy and
+  **Support URL** https://skoreking.buisson.us/support
+- Google Play Console: **Privacy policy** https://skoreking.buisson.us/privacy and the
+  **Website** / support contact https://skoreking.buisson.us/support
